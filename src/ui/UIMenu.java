@@ -12,8 +12,8 @@ public class UIMenu {
         int response = 0;
 
         do {
-            System.out.println("1. Doctor\n" +
-                    "2. Patient\n" +
+            System.out.println("1. model.Doctor\n" +
+                    "2. model.Patient\n" +
                     "0. Salir");
 
             Scanner sc = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class UIMenu {
 
             switch(response) {
                 case 1:
-                    System.out.println("Doctor");
+                    System.out.println("model.Doctor");
                     break;
                 case 2:
                     response = 0;
@@ -41,7 +41,7 @@ public class UIMenu {
 
         do {
             System.out.println("\n\n");
-            System.out.println("Patient\n" +
+            System.out.println("model.Patient\n" +
                     "1. Book an appointment\n" +
                     "2. My appointments\n" +
                     "0. Return");
