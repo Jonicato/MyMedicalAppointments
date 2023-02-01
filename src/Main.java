@@ -1,16 +1,17 @@
 import model.*;
+import ui.UIMenu;
 
 import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        // showMenu();
+        UIMenu.showMenu();
 
-        Doctor myDoctor = new Doctor("Jonathan Rodríguez", "jonicato@gmail.com");
-        myDoctor.addAvailableAppointment(new Date(), "4 pm");
-        myDoctor.addAvailableAppointment(new Date(), "10 am");
-        myDoctor.addAvailableAppointment(new Date(), "1 pm");
-        System.out.println(myDoctor);
+        //Doctor myDoctor = new Doctor("Jonathan Rodríguez", "jonicato@gmail.com");
+        //myDoctor.addAvailableAppointment(new Date(), "4 pm");
+        //myDoctor.addAvailableAppointment(new Date(), "10 am");
+        //myDoctor.addAvailableAppointment(new Date(), "1 pm");
+        //System.out.println(myDoctor);
 
         User user = new Doctor("Azareth Gallegos", "aby1009@gmail.com");
         user.showDataUser();
@@ -39,7 +40,7 @@ public class Main {
             }
         };
 
-        ISchedulable iSchedulable1 = new AppointmentDoctor();
+        // ISchedulable iSchedulable1 = new AppointmentDoctor();
         // iSchedulable1.schedule();
 
         /* for (model.Doctor.AvailableAppointment availableAppointment: myDoctor.getAvailableAppointments()) {
